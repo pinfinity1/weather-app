@@ -18,10 +18,10 @@ form.addEventListener("submit", e => {
             div.classList.add("col-12", "col-sm-6", "col-md-4")
             const card = `
             <div class="card position-relative h-100 shadow">
-                        <div class="card-header  h2 display-5">${name}</div>
+                        <div class="card-header  h4 display-6">${name}</div>
                         <span class="badge rounded-pill bg-dark position-absolute top-0 end-0 fs-6 translate-middle">${sys.country}</span>
                         <div class="card-body">
-                            <p class="h2 display-1 mb-3">${Math.round(main.temp)}<small>c</small></p>
+                            <p class="h2 display-1 mb-3">${Math.round(main.temp)}<small>&degc</small></p>
                             <img src="${icon}" alt="weather icon">
                             <p class="fs-3 display-6 mt-3">${weather[0]["description"]}</p>
                         </div>
